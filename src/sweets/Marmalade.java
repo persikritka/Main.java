@@ -15,18 +15,33 @@ public class Marmalade extends Sweets{
         this.juiceShare = juiceShare;
     }
     @Override
-    public int sugar() {
-        return this.getAmountOfSugar();
+    public void setAmountOfSugar(int amountOfSugar) {
+        this.amountOfSugar = amountOfSugar;
     }
 
     @Override
-    public int calories() {
-        return this.getAmountOfCalories();
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
     @Override
-    public int weight() {
-        return this.getWeight();
+    public void setAmountOfCalories(int amountOfCalories) {
+        this.amountOfCalories = amountOfCalories;
+    }
+
+    @Override
+    public int getWeight() {
+        return super.weight;
+    }
+
+    @Override
+    public int getAmountOfCalories() {
+        return super.amountOfCalories;
+    }
+
+    @Override
+    public int getAmountOfSugar() {
+        return super.amountOfSugar;
     }
 
     @Override

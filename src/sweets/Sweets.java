@@ -1,36 +1,21 @@
 package sweets;
 
 public abstract class Sweets {
-    private int amountOfSugar;
-    public int weight;
-    private int amountOfCalories;
-    public abstract int sugar();
-    public abstract int weight();
-    public abstract int calories();
+    protected int amountOfSugar;
+    protected int weight;
+    protected int amountOfCalories;
 
-    public void setAmountOfSugar(int amountOfSugar) {
-        this.amountOfSugar = amountOfSugar;
-    }
+    public abstract void setAmountOfSugar(int amountOfSugar);
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
+    public abstract void setWeight(int weight);
 
-    public void setAmountOfCalories(int amountOfCalories) {
-        this.amountOfCalories = amountOfCalories;
-    }
+    public abstract void setAmountOfCalories(int amountOfCalories);
 
-    public int getWeight() {
-        return weight;
-    }
+    public abstract int getWeight();
 
-    public int getAmountOfCalories() {
-        return amountOfCalories;
-    }
+    public abstract int getAmountOfCalories();
 
-    public int getAmountOfSugar() {
-        return amountOfSugar;
-    }
+    public abstract int getAmountOfSugar();
 
 
 }

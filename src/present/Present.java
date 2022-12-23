@@ -47,20 +47,20 @@ public class Present extends PresentComparator {
         for (i = 0; i < list.size(); i++) {
             if(list.get(i).getClass() == Candy.class) {
                 Candy candy = (Candy)list.get(i);
-                int amountOfSugar = candy.sugar();
+                int amountOfSugar = candy.getAmountOfSugar();
                 if (amountOfSugar <= secondAmountOfSugar && amountOfSugar >= firstAmountOfSugar) {
                     arrayOfSweets[j] = candy;
                     j++;
                 }
             } else if (list.get(i).getClass() == Marmalade.class) {
                 Marmalade marmalade = (Marmalade)list.get(i);
-                if(marmalade.sugar() >= firstAmountOfSugar && marmalade.sugar() <= secondAmountOfSugar) {
+                if(marmalade.getAmountOfSugar() >= firstAmountOfSugar && marmalade.getAmountOfSugar() <= secondAmountOfSugar) {
                     arrayOfMarmalade[k] = marmalade;
                     k++;
                 }
             } else if (list.get(i).getClass() == Chocolate.class) {
                 Chocolate chocolate = (Chocolate)list.get(i);
-                if(chocolate.sugar() >= firstAmountOfSugar && chocolate.sugar() <= secondAmountOfSugar) {
+                if(chocolate.getAmountOfSugar() >= firstAmountOfSugar && chocolate.getAmountOfSugar() <= secondAmountOfSugar) {
                     arrayOfChocolate[f] = chocolate;
                     f++;
                 }

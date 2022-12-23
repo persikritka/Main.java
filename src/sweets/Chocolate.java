@@ -16,26 +16,41 @@ public class Chocolate extends Sweets{
     }
 
     @Override
-    public int sugar() {
-        return this.getAmountOfSugar();
-    }
-
-    @Override
-    public int calories() {
-        return this.getAmountOfCalories();
-    }
-
-    @Override
-    public int weight() {
-        return this.getWeight();
-    }
-
-    @Override
     public String toString() {
         String result = "Chocolate: weight: " + this.getWeight() +
                 ", amountOfSugar:  " + this.getAmountOfSugar() +
                 ", amountOfCalories: " + this.getAmountOfCalories() +
                 ", name of chocolate: " + this.nameOfChocolate + "\n";
         return result;
+    }
+
+    @Override
+    public void setAmountOfSugar(int amountOfSugar) {
+        this.amountOfSugar = amountOfSugar;
+    }
+
+    @Override
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public void setAmountOfCalories(int amountOfCalories) {
+        this.amountOfCalories = amountOfCalories;
+    }
+
+    @Override
+    public int getWeight() {
+        return super.weight;
+    }
+
+    @Override
+    public int getAmountOfCalories() {
+        return super.amountOfCalories;
+    }
+
+    @Override
+    public int getAmountOfSugar() {
+        return super.amountOfSugar;
     }
 }

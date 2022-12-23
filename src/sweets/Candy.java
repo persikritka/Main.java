@@ -15,18 +15,33 @@ public class Candy extends Sweets {
    }
 
     @Override
-    public int sugar() {
-        return this.getAmountOfSugar();
+    public int getAmountOfSugar() {
+        return super.amountOfSugar;
     }
 
     @Override
-    public int calories() {
-        return this.getAmountOfCalories();
+    public void setAmountOfSugar(int amountOfSugar) {
+        this.amountOfSugar = amountOfSugar;
     }
 
     @Override
-    public int weight() {
-        return this.getWeight();
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    @Override
+    public void setAmountOfCalories(int amountOfCalories) {
+        this.amountOfCalories = amountOfCalories;
+    }
+
+    @Override
+    public int getAmountOfCalories() {
+        return super.amountOfCalories;
+    }
+
+    @Override
+    public int getWeight() {
+        return super.weight;
     }
 
     public TypeOfCandy getTypeOfCandy() {
