@@ -1,0 +1,8 @@
+[Marmalade: weight: 34, amountOfSugar:  34, amountOfCalories: 45, juice share: 2
+, Candy: weight: 34, amountOfSugar:  23, amountOfCalories: 345, typeOfCandy: Lollipops
+, Chocolate: weight: 90, amountOfSugar:  22, amountOfCalories: 450, name of chocolate: Milka
+, Candy: weight: 123, amountOfSugar:  34, amountOfCalories: 456, typeOfCandy: Chocolates
+]
+Weight of present: 281
+Chocolate: weight: 90, amountOfSugar:  22, amountOfCalories: 450, name of chocolate: Milka
+
